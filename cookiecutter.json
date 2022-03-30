@@ -1,0 +1,12 @@
+{
+    "project_name": "",
+    "app_type": [
+        "python package",
+        "pyvueeel (desktop & web app)"
+    ],
+    "github_user": "Malachov",
+    "author": "Daniel Malachov",
+    "author_email": "malachovd@seznam.cz",
+    "description": "",
+    "minimal_python_version": "3.7"
+}

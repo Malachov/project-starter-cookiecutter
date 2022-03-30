@@ -1,0 +1,64 @@
+.my-flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.my-flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-flex-row > * {
+  margin: 20px 23px 20px 23px !important;
+}
+
+h3 {
+  padding-top: 20px;
+}
+
+.my-pre-wrapped {
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.my-caption {
+  font-weight: bold;
+}
+
+.formulate-input-help--after {
+  max-width: 265px;
+}
+
+.formulate-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulate-input-label--before {
+  font-size: 120% !important;
+}
+
+.formulate-input-label--after {
+  margin-left: -33px !important;
+  padding-left: 49px;
+  padding-top: 5px;
+  margin-top: -3px;
+  padding-bottom: 5px;
+  margin-bottom: -4px;
+}
+
+.formulate-input-element--radio {
+  margin-bottom: 0;
+}
+
+.formulate-input-label {
+  text-align: center;
+}
