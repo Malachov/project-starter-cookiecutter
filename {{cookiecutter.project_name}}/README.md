@@ -36,9 +36,5 @@ In opened app, there is a little help button where there is a simple overview ab
 
 Delete is faster than write, so there are many working examples like for example plot, various formatting (flex row, flex column), settings panel, function call from python to JS and vice versa or automatic alerting from python. If you want to see how some example is working, just use **ctrl + F** in IDE or check components for its props.
 
-This is how the example looks like
-
-<div align="center"><img src="docs/source/_static/project-starter-gui.png" width="620" alt="project-starter-gui"/></div>
-
 For a desktop version where the user does not have python installed, you have to build it first. Use mypythontools `build` module (trigger with tasks button).
 {% endif %}

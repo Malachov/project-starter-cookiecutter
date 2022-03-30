@@ -2,11 +2,15 @@
 
 Project scaffolding fast and easy. Python package or Py / vue / eel desktop application
 
-Install (cookiecutter)[https://github.com/cookiecutter/cookiecutter] and run
+Install [cookiecutter](https://github.com/cookiecutter/cookiecutter) and run
 
     cookiecutter https://github.com/Malachov/project-starter-cookiecutter
 
 Answer some questions and you're ready to go.
+
+Empty application contain simple example to be overwritten and look like this
+
+<div align="center"><img src="docs/source/_static/project-starter-gui.png" width="620" alt="project-starter-gui"/></div>
 
 ## Further steps
 
