@@ -1,7 +1,7 @@
 import traceback
 
 import mylogging
-from pyvueeel import pyvueeel_internal
+import pyvueeel
 
 
 def print_traceback(caption="Error", message=""):
@@ -14,10 +14,10 @@ def print_traceback(caption="Error", message=""):
         message (str, optional): Heading of detailed traceback. Defaults to "Error".
     """
     mylogging.traceback(
-        f"Catched error - server still running.\n\n{message}",
+        f"Caught error - server still running.\n\n{message}",
         caption,
     )
-    pyvueeel_internal.eel.create_alert(
+    pyvueeel.eel.create_alert(
         caption,
         message,
         traceback.format_exc(),

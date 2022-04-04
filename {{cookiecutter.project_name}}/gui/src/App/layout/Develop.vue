@@ -1,4 +1,4 @@
-{% raw %}
+{% raw -%}
 <template>
   <v-container>
     <h1>Development</h1>
@@ -44,5 +44,4 @@ export default {
   },
 };
 </script>
-
-{% endraw %}
+{%- endraw %}

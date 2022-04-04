@@ -1,0 +1,7 @@
+{%- if cookiecutter.app_type == 'pyvueeel (desktop & web app)' -%}
+
+pyvueeel
+numpy
+pandas
+
+{% endif %}

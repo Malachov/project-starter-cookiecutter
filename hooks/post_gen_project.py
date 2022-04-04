@@ -3,18 +3,19 @@ from pathlib import Path
 import shutil
 
 REMOVE_PATHS = [
-    "{% if cookiecutter.app_type == 'python package' %}",
+    "{% if cookiecutter.app_type == 'python package' -%}",
     
         "gui",
         "utils/build_script.py"
         "{{cookiecutter.project_name}}/app.py"
         "{{cookiecutter.project_name}}/misc.py"
+        "{{cookiecutter.project_name}}/store.py"
     
-    "{% else %}",
+    "{%- else -%}",
 
         "setup.py",
 
-    "{% endif %}"
+    "{%- endif-%}"
 ]
 
 for p in REMOVE_PATHS:

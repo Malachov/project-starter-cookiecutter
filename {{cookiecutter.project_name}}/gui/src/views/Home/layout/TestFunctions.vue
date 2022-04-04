@@ -1,4 +1,4 @@
-{% raw %}
+{% raw -%}
 <template>
   <div>
     <h3>Flex column</h3>
@@ -32,5 +32,4 @@ export default {
   },
 };
 </script>
-
-{% endraw %}
+{%- endraw %}

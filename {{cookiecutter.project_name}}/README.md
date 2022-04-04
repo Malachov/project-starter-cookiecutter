@@ -10,7 +10,8 @@ Official documentation - [readthedocs](https://{{cookiecutter.github_user}}.read
 
 Official repo - [GitHub](https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.github_user}})
 
-{% if cookiecutter.app_type == 'python package' %}
+{%- if cookiecutter.app_type == 'python package' %}
+
 ## Installation
 
 Python >=3.6 (Python 2 is not supported).
@@ -24,11 +25,14 @@ pip install {{cookiecutter.github_user}}
 
 - module1
 - module2
-{% endif %}
-{% if cookiecutter.app_type != 'python package' %}
+  
+{%- endif -%}
+
+{%- if cookiecutter.app_type == 'pyvueeel (desktop & web app)' %}
+
 ## How to
 
-To run an app in develop mode, you have to run both frontend and python. Run frontend with debugging app.py (do not run, just debug). Then run frontend with `npm run serve` in gui folder (or use Task explorer if using VS Code). Open your favourite browser and open [http://localhost:8080](http://localhost:8080).
+To run an app in develop mode, you have to run both frontend and python. Run frontend with debugging app.py (do not run, just debug). Then run frontend with `npm run serve` in gui folder (or use Task explorer if using VS Code). Open your favorite browser and open [http://localhost:8080](http://localhost:8080).
 
 It's recommended to use Vue.js devtools extension where you can see what component is on cursor, edit props values or see list of all used mutations.
 
@@ -37,4 +41,5 @@ In opened app, there is a little help button where there is a simple overview ab
 Delete is faster than write, so there are many working examples like for example plot, various formatting (flex row, flex column), settings panel, function call from python to JS and vice versa or automatic alerting from python. If you want to see how some example is working, just use **ctrl + F** in IDE or check components for its props.
 
 For a desktop version where the user does not have python installed, you have to build it first. Use mypythontools `build` module (trigger with tasks button).
-{% endif %}
+
+{%- endif %}

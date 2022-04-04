@@ -1,3 +1,4 @@
+{% raw -%}
 <template>
   <div class="ma-16">
     <h2>Some other functions / features you could use</h2>
@@ -26,3 +27,4 @@ export default {
   },
 };
 </script>
+{%- endraw %}

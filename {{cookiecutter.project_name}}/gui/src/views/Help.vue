@@ -1,3 +1,4 @@
+{% raw -%}
 <template>
   <v-container>
     <v-row align="center" justify="center">
@@ -38,3 +39,4 @@ h2 {
   margin-top: 30px;
 }
 </style>
+{%- endraw %}

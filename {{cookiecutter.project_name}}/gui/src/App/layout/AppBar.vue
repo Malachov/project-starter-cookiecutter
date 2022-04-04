@@ -1,6 +1,7 @@
+{% raw -%}
 <template>
   <v-app-bar class="ma-4" flat max-height="120px" color="transparent">
-    <img class="ma-5" src="./../assets/img/logo.png" height="70" />
+    <img class="ma-5" src="@/assets/img/logo.svg" height="70" />
 
     <v-spacer></v-spacer>
 
@@ -47,3 +48,4 @@ export default {
   }),
 };
 </script>
+{%- endraw %}

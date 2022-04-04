@@ -1,7 +1,8 @@
+{% raw -%}
 <template>
   <div>
     <h3>Flex row</h3>
-    <div class="d-flex flex-row  ">
+    <div class="d-flex flex-row">
       <ComponentNonUnique />
       <ComponentNonUnique />
       <ComponentNonUnique />
@@ -16,3 +17,4 @@ export default {
   components: { ComponentNonUnique },
 };
 </script>
+{%- endraw %}

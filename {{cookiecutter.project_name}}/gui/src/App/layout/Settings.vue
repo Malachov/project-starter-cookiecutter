@@ -1,4 +1,4 @@
-{% raw %}
+{% raw -%}
 <template>
   <v-dialog v-model="dialog" max-width="80%">
     <template v-slot:activator="{ on, attrs }">
@@ -163,5 +163,4 @@ export default {
   align-items: flex-start;
 }
 </style>
-
-{% endraw %}
+{%- endraw %}

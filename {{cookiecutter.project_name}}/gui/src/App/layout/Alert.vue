@@ -1,4 +1,4 @@
-{% raw %}
+{% raw -%}
 <template>
   <div v-if="alert.show">
     <v-row justify="center">
@@ -55,5 +55,4 @@ export default {
   margin-left: 30px !important;
 }
 </style>
-
-{% endraw %}
+{%- endraw %}

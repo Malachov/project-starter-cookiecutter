@@ -1,6 +1,7 @@
 // Do not put everything into index.js, that would be a mess and name collisions would appear.
 // If there are variables (or methods) that are in close relation, put it into module
-// If you use for example settings module, you that need to specify module if acessing it. Check develop.vue for how to use this module example
+// If you use for example settings module, you that need to specify module if accessing it. Check develop.vue
+// for how to use this module example
 
 import { getField, updateField } from "vuex-map-fields";
 

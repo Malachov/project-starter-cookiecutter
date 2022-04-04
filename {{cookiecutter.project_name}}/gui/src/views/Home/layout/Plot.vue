@@ -1,3 +1,4 @@
+{% raw -%}
 <template>
   <v-container>
     <Plotly
@@ -26,3 +27,4 @@ export default {
   },
 };
 </script>
+{%- endraw %}

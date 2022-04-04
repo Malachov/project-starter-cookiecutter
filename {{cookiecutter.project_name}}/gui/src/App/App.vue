@@ -1,3 +1,4 @@
+{% raw -%}
 <template>
   <v-app>
     <AppBar />
@@ -11,12 +12,13 @@
 </template>
 
 <script>
-import Alert from "./App/Alert";
-import AppBar from "./App/AppBar";
-import Develop from "./App/Develop";
+import Alert from "./layout/Alert";
+import AppBar from "./layout/AppBar";
+import Develop from "./layout/Develop";
 
 export default {
   name: "App",
   components: { Alert, AppBar, Develop },
 };
 </script>
+{%- endraw %}

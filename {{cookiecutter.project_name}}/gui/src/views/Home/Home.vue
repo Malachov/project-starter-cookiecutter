@@ -1,3 +1,4 @@
+{% raw -%}
 <template>
   <v-container id="app" class="mb-10">
     <v-row>
@@ -16,10 +17,10 @@
 </template>
 
 <script>
-import TestFunctions from "./components/Home/TestFunctions";
-import Plot from "./components/Home/Plot";
-import Styling from "./components/Home/Styling";
-import Usable from "./components/Home/Usable";
+import TestFunctions from "./layout/TestFunctions";
+import Plot from "./layout/Plot";
+import Styling from "./layout/Styling";
+import Usable from "./layout/Usable";
 
 export default {
   components: {
@@ -32,3 +33,4 @@ export default {
 </script>
 
 <style></style>
+{%- endraw %}

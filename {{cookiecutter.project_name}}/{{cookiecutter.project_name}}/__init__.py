@@ -1,4 +1,5 @@
 """
+{{cookiecutter.description}}
 
 .. image:: https://img.shields.io/pypi/pyversions/{{cookiecutter.project_name}}.svg
     :target: https://pypi.python.org/pypi/{{cookiecutter.project_name}}/
@@ -24,15 +25,14 @@
     :target: https://codecov.io/gh/Malachov/{{cookiecutter.project_name}}
     :alt: Codecov
 
-
-{{cookiecutter.description}}
-
 Links
 =====
 
 Official documentation - https://{{cookiecutter.project_name}}.readthedocs.io/
 
 Official repo - https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}
+
+{%- if cookiecutter.app_type == 'python package' %}
 
 Installation
 ============
@@ -43,7 +43,29 @@ Install with::
 
     pip install {{cookiecutter.project_name}}
 
+{%- endif %}
+
+{%- if cookiecutter.app_type == 'pyvueeel (desktop & web app)' %}
+
+This is backend of an pyvueeel application. Check readme for how to run and develop such an application.
+
+{%- endif %}
 """
+
+"{%- if cookiecutter.app_type == 'pyvueeel (desktop & web app)' %}"
+
+from {{cookiecutter.project_name}} import app, misc, store
+
+__all__ = ["app", "misc", "store"]
+
+{%- else %}
+
+# from {{cookiecutter.project_name}} import subpackage
+
+__all__ = []  # ["subpackage"]
+
+{%- endif %}
+
 
 __version__ = "0.0.1"
 
@@ -51,7 +73,6 @@ __author__ = "{{cookiecutter.author}}"  # Change it to your values
 __email__ = "{{cookiecutter.author_email}}"  # Change it to your values
 __license__ = "MIT"
 
-__all__ = []  # ["subpackage"]
 
 
 # Replace this with your imports and do not forget to add it to __all__
