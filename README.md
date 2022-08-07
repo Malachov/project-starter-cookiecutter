@@ -10,7 +10,7 @@ Answer some questions and you're ready to go.
 
 Empty application contain simple example to be overwritten and look like this
 
-<div align="center"><img src="docs/source/_static/project-starter-gui.png" width="620" alt="project-starter-gui"/></div>
+<div align="center"><img src="{{cookiecutter.project_name}}/docs/source/_static/project-starter-gui.png" width="620" alt="project-starter-gui"/></div>
 
 ## Further steps
 

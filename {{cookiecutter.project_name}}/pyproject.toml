@@ -1,13 +1,22 @@
+[build-system]
+requires = ["mypythontools_cicd[packages]"]
+
 [tool.pytest.ini_options]
 addopts = "--doctest-modules -x --nbmake"
 doctest_optionflags = "NORMALIZE_WHITESPACE NUMBER ELLIPSIS IGNORE_EXCEPTION_DETAIL"
 # usefixtures = "setup_tests"
 norecursedirs = [
+    "tools",
     "dist",
     "build",
+    "profiling",
     "venv",
-    "node_modules"
+    ".ipynb_checkpoints",
+    "tests/venv"
 ]
 
 [tool.black]
 line-length = 110
+
+[tool.coverage.run]
+omit = ["tests/*"]

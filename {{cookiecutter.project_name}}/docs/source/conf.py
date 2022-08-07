@@ -1,26 +1,16 @@
-##############
-### Settings
-#############
+"""Module configuring sphinx tools that generates documentation
 
+Note:
+    Template suppose separate build and source structure
 
-PROJECT = "{{cookiecutter.project_name}}"  # !!! Suppose that github repo has the same name as python folder with main files
-AUTHOR = "{{cookiecutter.author}}"  # Change it to your values
-GITHUB_USER = "{{cookiecutter.github_user}}"  # Change it to your values
-
-# Template suppose separate build and source structure
-
-
-#####################
-### End of settings
-####################
-
-# No need of editting further
-
-
+"""
 import sys
 import pathlib
 import datetime
 
+PROJECT = "{{cookiecutter.project_name}}"  # !!! Suppose that github repo has the same name as python folder with main files
+AUTHOR = "{{cookiecutter.author}}"  # Change it to your values
+GITHUB_USER = "{{cookiecutter.github_user}}"  # Change it to your values
 
 # Folders to sys path to be able to import
 script_dir = pathlib.Path(__file__).resolve()
