@@ -1,6 +1,6 @@
 {%- if cookiecutter.app_type == 'pyvueeel (desktop & web app)' -%}
 
-pyvueeel
+pyvueeel[data]
 numpy
 pandas
 
