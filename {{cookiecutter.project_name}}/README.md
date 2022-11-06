@@ -8,7 +8,7 @@
 
 Official documentation - [readthedocs](https://{{cookiecutter.github_user}}.readthedocs.io/)
 
-Official repo - [GitHub](https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.github_user}})
+Official repo - [GitHub](https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}})
 
 {%- if cookiecutter.app_type == 'python package' %}
 
